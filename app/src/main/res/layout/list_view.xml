@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools = "http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
-    <TextView
-        android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height">
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id = "@+id/image_view"
+        tools:src="@mipmap/ic_launcher" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id = "@+id/list_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:id = "@+id/miwork_word"
         tools:text = "lutti"
+        android:gravity="bottom"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
         />
     <TextView
+        android:paddingLeft="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:id = "@+id/english_word"
         tools:text="one"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
         />
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_play_arrow_white_24dp" />
+    </RelativeLayout>
+
 
 </LinearLayout>

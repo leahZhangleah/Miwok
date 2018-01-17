@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.NumbersActivity"
-    android:id = "@+id/word_list_view">
+    android:id = "@+id/word_list_view"
+    android:background="@color/tan_background"
+    android:drawSelectorOnTop="true">
+
 
 
 </ListView>
